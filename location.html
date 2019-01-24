@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mirillis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img class="graficlogo" src="img/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+        <div class="top-nav" id="myTopnav">
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="location.html">LOCATION</a>
+            <a id="menu" href="#" class="icon">&#9776;</a>
+        </div>
+    </nav>
+</header>
+<main id="local">
+    <div class="local_map">
+    <h2>Location</h2>
+    <div id="map"></div>
+    </div>
+    <div class="local_info">
+    <h2>Contact Info</h2>
+        <h3>Contact Email</h3>
+        <h6>exsaplmail@email.com</h6>
+        <h3>Contact Phone</h3>
+        <h6>+48100100100</h6>
+        <h6>+48200200200</h6>
+        <h6>+48300300300</h6>
+        <h3>Contact Adress</h3>
+        <h6>Al. Grunwaldzka 888/d</h6>
+        <h6>81-001</h6>
+    </div>
+</main>
+<footer>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="location.html">LOCATION</a>
+    </nav>
+    <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="" class="graficlogo"></a>
+    </div>
+    <div class="social">
+        <a href="#"><img src="img/em.png" alt=""></a>
+        <a href="#"><img src="img/face.png" alt=""></a>
+        <a href="#"><img src="img/goo.png" alt=""></a>
+        <a href="#"><img src="img/inst.png" alt=""></a>
+        <a href="#"><img src="img/pint.png" alt=""></a>
+    </div>
+    <p>@Antoni Web Produrtion.2019</p>
+</footer>
+
+
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 54.2299988, lng: 18.6525188};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 6, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPdFQZ11YG0UYjvsJuGfxs0vHqbe3CfRc&callback=initMap">
+</script>
+<script src="script.js"></script>
+</body>
+</html>
